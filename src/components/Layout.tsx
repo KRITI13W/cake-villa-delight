@@ -5,11 +5,11 @@ import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
 import CookieBar from "./CookieBar";
 
-const Layout = ({ children, cartCount = 0 }: { children: ReactNode; cartCount?: number }) => {
+const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="flex min-h-screen flex-col">
       <AnnouncementBar />
-      <Navbar cartCount={cartCount} />
+      <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />
       <WhatsAppButton />

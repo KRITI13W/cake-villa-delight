@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 const promos = [
-  "🎂 Free delivery on orders above ₹999!",
-  "🍰 20% OFF on custom cakes — Use code SWEET20",
+  "🎂 Handcrafted cakes for every celebration!",
+  "🍰 Custom cake designs — message us on WhatsApp",
   "🎉 New: Seasonal Mango specials are here!",
 ];
 
@@ -17,8 +17,8 @@ const AnnouncementBar = () => {
   }, []);
 
   return (
-    <div className="bg-primary py-2 text-center text-sm font-medium text-primary-foreground">
-      <p className="animate-fade-in" key={index}>{promos[index]}</p>
+    <div className="bg-primary py-1.5 sm:py-2 text-center text-xs sm:text-sm font-medium text-primary-foreground">
+      <p className="animate-fade-in px-4" key={index}>{promos[index]}</p>
     </div>
   );
 };

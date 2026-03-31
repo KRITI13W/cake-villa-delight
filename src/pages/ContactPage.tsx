@@ -15,15 +15,15 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <section className="container py-12">
-        <div className="text-center mb-10">
-          <h1 className="text-3xl md:text-5xl font-heading font-bold mb-2">Contact Us</h1>
-          <p className="text-muted-foreground">We'd love to hear from you</p>
+      <section className="container py-8 sm:py-12">
+        <div className="text-center mb-8 sm:mb-10">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-2">Contact Us</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">We'd love to hear from you</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 max-w-4xl mx-auto">
           {/* Form */}
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
             <div>
               <label className="block text-sm font-medium mb-1">Name *</label>
               <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
@@ -42,48 +42,24 @@ const ContactPage = () => {
           </form>
 
           {/* Info */}
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/30">
-                <MapPin size={18} className="text-accent" />
+          <div className="space-y-5 sm:space-y-6">
+            {[
+              { icon: MapPin, title: "Address", text: "123 Baker Street, Sweet Lane, Mumbai 400001" },
+              { icon: Phone, title: "Phone", text: "+91 98765 43210" },
+              { icon: Mail, title: "Email", text: "hello@cakevilla.in" },
+              { icon: Clock, title: "Opening Hours", text: "Monday – Sunday: 8:00 AM – 9:00 PM" },
+            ].map(({ icon: Icon, title, text }) => (
+              <div key={title} className="flex items-start gap-3 sm:gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/30">
+                  <Icon size={18} className="text-accent" />
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold mb-1 text-sm sm:text-base">{title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{text}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-heading font-semibold mb-1">Address</h3>
-                <p className="text-sm text-muted-foreground">123 Baker Street, Sweet Lane, Mumbai 400001</p>
-              </div>
-            </div>
+            ))}
 
-            <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/30">
-                <Phone size={18} className="text-accent" />
-              </div>
-              <div>
-                <h3 className="font-heading font-semibold mb-1">Phone</h3>
-                <p className="text-sm text-muted-foreground">+91 98765 43210</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/30">
-                <Mail size={18} className="text-accent" />
-              </div>
-              <div>
-                <h3 className="font-heading font-semibold mb-1">Email</h3>
-                <p className="text-sm text-muted-foreground">hello@cakevilla.in</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/30">
-                <Clock size={18} className="text-accent" />
-              </div>
-              <div>
-                <h3 className="font-heading font-semibold mb-1">Opening Hours</h3>
-                <p className="text-sm text-muted-foreground">Monday – Sunday: 8:00 AM – 9:00 PM</p>
-              </div>
-            </div>
-
-            {/* Map placeholder */}
             <div className="rounded-xl overflow-hidden border border-border shadow-card">
               <iframe
                 title="Cake Villa location"
