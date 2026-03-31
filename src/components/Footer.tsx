@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="border-t border-border bg-foreground text-background">
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container py-8 sm:py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <h3 className="text-xl font-heading font-bold mb-2">
               Cake <span className="text-primary">Villa</span>
             </h3>
@@ -26,8 +26,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm opacity-80">
+            <h4 className="font-heading font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Quick Links</h4>
+            <ul className="space-y-2 text-xs sm:text-sm opacity-80">
               <li><Link to="/" className="hover:opacity-100 transition-opacity">Home</Link></li>
               <li><Link to="/menu" className="hover:opacity-100 transition-opacity">Menu</Link></li>
               <li><Link to="/custom-cake" className="hover:opacity-100 transition-opacity">Custom Cake</Link></li>
@@ -38,9 +38,9 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading font-semibold mb-4">Contact Us</h4>
-            <ul className="space-y-2 text-sm opacity-80">
-              <li>📍 123 Baker Street, Sweet Lane, Mumbai</li>
+            <h4 className="font-heading font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Contact Us</h4>
+            <ul className="space-y-2 text-xs sm:text-sm opacity-80">
+              <li>📍 123 Baker Street, Mumbai</li>
               <li>📞 +91 98765 43210</li>
               <li>✉️ hello@cakevilla.in</li>
             </ul>
@@ -48,16 +48,15 @@ const Footer = () => {
 
           {/* Hours */}
           <div>
-            <h4 className="font-heading font-semibold mb-4">Opening Hours</h4>
-            <ul className="space-y-2 text-sm opacity-80">
+            <h4 className="font-heading font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Opening Hours</h4>
+            <ul className="space-y-2 text-xs sm:text-sm opacity-80">
               <li>Monday – Sunday</li>
               <li>8:00 AM – 9:00 PM</li>
-              <li className="pt-2 text-primary font-medium">Join our team! We're hiring 🎂</li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-background/10 text-center text-sm opacity-60">
+        <div className="mt-8 sm:mt-10 pt-6 border-t border-background/10 text-center text-xs sm:text-sm opacity-60">
           © {new Date().getFullYear()} Cake Villa. All rights reserved.
         </div>
       </div>

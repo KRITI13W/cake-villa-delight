@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ShoppingCart, Menu, X, Search } from "lucide-react";
+import { Menu, X, Search } from "lucide-react";
 import SearchBar from "./SearchBar";
 
 const navLinks = [
@@ -10,23 +10,23 @@ const navLinks = [
   { label: "Contact", path: "/contact" },
 ];
 
-const Navbar = ({ cartCount }: { cartCount: number }) => {
+const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-14 sm:h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-2xl font-heading font-bold text-foreground">
+          <span className="text-xl sm:text-2xl font-heading font-bold text-foreground">
             Cake <span className="text-accent">Villa</span>
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -43,7 +43,7 @@ const Navbar = ({ cartCount }: { cartCount: number }) => {
         </div>
 
         {/* Right side */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <button
             onClick={() => setSearchOpen(!searchOpen)}
             className="p-2 rounded-full hover:bg-muted transition-colors"
@@ -51,14 +51,6 @@ const Navbar = ({ cartCount }: { cartCount: number }) => {
           >
             <Search size={20} />
           </button>
-          <Link to="/menu" className="relative p-2 rounded-full hover:bg-muted transition-colors" aria-label="Cart">
-            <ShoppingCart size={20} />
-            {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-accent text-[10px] font-bold text-accent-foreground">
-                {cartCount}
-              </span>
-            )}
-          </Link>
           <button
             className="md:hidden p-2 rounded-full hover:bg-muted transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
