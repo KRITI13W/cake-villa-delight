@@ -9,7 +9,18 @@ export interface Product {
   reviews: number;
   tags: string[];
   deliveryInfo?: string;
+  occasions?: string[];
 }
+
+export const occasions = [
+  "All Occasions",
+  "Birthday",
+  "Wedding",
+  "Anniversary",
+  "Festival",
+  "Party",
+  "Everyday",
+];
 
 export const categories = [
   "All",
