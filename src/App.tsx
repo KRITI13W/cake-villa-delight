@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index";
 import MenuPage from "./pages/MenuPage";
+import AboutPage from "./pages/AboutPage";
 import CustomCakePage from "./pages/CustomCakePage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
