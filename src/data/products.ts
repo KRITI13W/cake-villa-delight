@@ -152,7 +152,7 @@ export const products: Product[] = [
     reviews: 98,
     tags: ["bestseller"],
     deliveryInfo: "Best enjoyed fresh",
-  },
+    occasions: ["Party", "Everyday"],
   {
     id: "11",
     name: "Mango Mousse Cake",
