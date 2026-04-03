@@ -104,7 +104,7 @@ export const products: Product[] = [
     reviews: 156,
     tags: ["bestseller"],
     deliveryInfo: "30-min delivery",
-  },
+    occasions: ["Party", "Everyday"],
   {
     id: "7",
     name: "Grilled Chicken Club",
