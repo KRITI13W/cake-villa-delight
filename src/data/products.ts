@@ -44,7 +44,7 @@ export const products: Product[] = [
     reviews: 124,
     tags: ["bestseller"],
     deliveryInfo: "Same-day delivery available",
-  },
+    occasions: ["Birthday", "Anniversary", "Wedding"],
   {
     id: "2",
     name: "Belgian Chocolate Truffle",
