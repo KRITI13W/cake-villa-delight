@@ -176,7 +176,7 @@ export const products: Product[] = [
     reviews: 67,
     tags: ["vegan-option"],
     deliveryInfo: "30-min delivery",
-  },
+    occasions: ["Everyday", "Party"],
 ];
 
 export const testimonials = [
