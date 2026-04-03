@@ -9,7 +9,18 @@ export interface Product {
   reviews: number;
   tags: string[];
   deliveryInfo?: string;
+  occasions?: string[];
 }
+
+export const occasions = [
+  "All Occasions",
+  "Birthday",
+  "Wedding",
+  "Anniversary",
+  "Festival",
+  "Party",
+  "Everyday",
+];
 
 export const categories = [
   "All",
@@ -33,6 +44,7 @@ export const products: Product[] = [
     reviews: 124,
     tags: ["bestseller"],
     deliveryInfo: "Same-day delivery available",
+    occasions: ["Birthday", "Anniversary", "Wedding"],
   },
   {
     id: "2",
@@ -45,6 +57,7 @@ export const products: Product[] = [
     reviews: 89,
     tags: ["bestseller"],
     deliveryInfo: "Same-day delivery available",
+    occasions: ["Birthday", "Wedding", "Anniversary"],
   },
   {
     id: "3",
@@ -57,6 +70,7 @@ export const products: Product[] = [
     reviews: 67,
     tags: ["seasonal"],
     deliveryInfo: "Order before 2pm for same-day",
+    occasions: ["Birthday", "Party"],
   },
   {
     id: "4",
@@ -69,6 +83,7 @@ export const products: Product[] = [
     reviews: 203,
     tags: ["vegan-option"],
     deliveryInfo: "Best enjoyed fresh",
+    occasions: ["Everyday"],
   },
   {
     id: "5",
@@ -81,6 +96,7 @@ export const products: Product[] = [
     reviews: 91,
     tags: [],
     deliveryInfo: "Best enjoyed fresh",
+    occasions: ["Everyday", "Party"],
   },
   {
     id: "6",
@@ -93,6 +109,7 @@ export const products: Product[] = [
     reviews: 156,
     tags: ["bestseller"],
     deliveryInfo: "30-min delivery",
+    occasions: ["Party", "Everyday"],
   },
   {
     id: "7",
@@ -105,6 +122,7 @@ export const products: Product[] = [
     reviews: 78,
     tags: [],
     deliveryInfo: "30-min delivery",
+    occasions: ["Everyday"],
   },
   {
     id: "8",
@@ -117,6 +135,7 @@ export const products: Product[] = [
     reviews: 112,
     tags: ["vegan-option"],
     deliveryInfo: "30-min delivery",
+    occasions: ["Everyday", "Party"],
   },
   {
     id: "9",
@@ -129,6 +148,7 @@ export const products: Product[] = [
     reviews: 145,
     tags: [],
     deliveryInfo: "30-min delivery",
+    occasions: ["Party", "Everyday"],
   },
   {
     id: "10",
@@ -141,6 +161,7 @@ export const products: Product[] = [
     reviews: 98,
     tags: ["bestseller"],
     deliveryInfo: "Best enjoyed fresh",
+    occasions: ["Party", "Everyday"],
   },
   {
     id: "11",
@@ -153,6 +174,7 @@ export const products: Product[] = [
     reviews: 42,
     tags: ["seasonal", "gluten-free"],
     deliveryInfo: "Limited availability",
+    occasions: ["Festival", "Birthday", "Anniversary"],
   },
   {
     id: "12",
@@ -165,6 +187,7 @@ export const products: Product[] = [
     reviews: 67,
     tags: ["vegan-option"],
     deliveryInfo: "30-min delivery",
+    occasions: ["Everyday", "Party"],
   },
 ];
 
