@@ -128,7 +128,7 @@ export const products: Product[] = [
     reviews: 112,
     tags: ["vegan-option"],
     deliveryInfo: "30-min delivery",
-  },
+    occasions: ["Everyday", "Party"],
   {
     id: "9",
     name: "Loaded Cheese Fries",
