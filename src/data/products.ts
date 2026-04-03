@@ -164,7 +164,7 @@ export const products: Product[] = [
     reviews: 42,
     tags: ["seasonal", "gluten-free"],
     deliveryInfo: "Limited availability",
-  },
+    occasions: ["Festival", "Birthday", "Anniversary"],
   {
     id: "12",
     name: "Veggie Supreme Burger",
