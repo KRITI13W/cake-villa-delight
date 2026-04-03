@@ -140,7 +140,7 @@ export const products: Product[] = [
     reviews: 145,
     tags: [],
     deliveryInfo: "30-min delivery",
-  },
+    occasions: ["Party", "Everyday"],
   {
     id: "10",
     name: "Chocolate Éclair",
