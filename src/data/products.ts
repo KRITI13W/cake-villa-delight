@@ -45,6 +45,7 @@ export const products: Product[] = [
     tags: ["bestseller"],
     deliveryInfo: "Same-day delivery available",
     occasions: ["Birthday", "Anniversary", "Wedding"],
+  },
   {
     id: "2",
     name: "Belgian Chocolate Truffle",
@@ -57,6 +58,7 @@ export const products: Product[] = [
     tags: ["bestseller"],
     deliveryInfo: "Same-day delivery available",
     occasions: ["Birthday", "Wedding", "Anniversary"],
+  },
   {
     id: "3",
     name: "Fresh Strawberry Shortcake",
@@ -69,6 +71,7 @@ export const products: Product[] = [
     tags: ["seasonal"],
     deliveryInfo: "Order before 2pm for same-day",
     occasions: ["Birthday", "Party"],
+  },
   {
     id: "4",
     name: "Butter Croissant",
@@ -81,6 +84,7 @@ export const products: Product[] = [
     tags: ["vegan-option"],
     deliveryInfo: "Best enjoyed fresh",
     occasions: ["Everyday"],
+  },
   {
     id: "5",
     name: "Almond Danish",
@@ -93,6 +97,7 @@ export const products: Product[] = [
     tags: [],
     deliveryInfo: "Best enjoyed fresh",
     occasions: ["Everyday", "Party"],
+  },
   {
     id: "6",
     name: "Classic Smash Burger",
@@ -105,6 +110,7 @@ export const products: Product[] = [
     tags: ["bestseller"],
     deliveryInfo: "30-min delivery",
     occasions: ["Party", "Everyday"],
+  },
   {
     id: "7",
     name: "Grilled Chicken Club",
@@ -117,6 +123,7 @@ export const products: Product[] = [
     tags: [],
     deliveryInfo: "30-min delivery",
     occasions: ["Everyday"],
+  },
   {
     id: "8",
     name: "Paneer Tikka Wrap",
@@ -129,6 +136,7 @@ export const products: Product[] = [
     tags: ["vegan-option"],
     deliveryInfo: "30-min delivery",
     occasions: ["Everyday", "Party"],
+  },
   {
     id: "9",
     name: "Loaded Cheese Fries",
@@ -141,6 +149,7 @@ export const products: Product[] = [
     tags: [],
     deliveryInfo: "30-min delivery",
     occasions: ["Party", "Everyday"],
+  },
   {
     id: "10",
     name: "Chocolate Éclair",
@@ -153,6 +162,7 @@ export const products: Product[] = [
     tags: ["bestseller"],
     deliveryInfo: "Best enjoyed fresh",
     occasions: ["Party", "Everyday"],
+  },
   {
     id: "11",
     name: "Mango Mousse Cake",
@@ -165,6 +175,7 @@ export const products: Product[] = [
     tags: ["seasonal", "gluten-free"],
     deliveryInfo: "Limited availability",
     occasions: ["Festival", "Birthday", "Anniversary"],
+  },
   {
     id: "12",
     name: "Veggie Supreme Burger",
@@ -177,6 +188,7 @@ export const products: Product[] = [
     tags: ["vegan-option"],
     deliveryInfo: "30-min delivery",
     occasions: ["Everyday", "Party"],
+  },
 ];
 
 export const testimonials = [
