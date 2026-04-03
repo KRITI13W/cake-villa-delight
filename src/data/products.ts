@@ -80,7 +80,7 @@ export const products: Product[] = [
     reviews: 203,
     tags: ["vegan-option"],
     deliveryInfo: "Best enjoyed fresh",
-  },
+    occasions: ["Everyday"],
   {
     id: "5",
     name: "Almond Danish",
