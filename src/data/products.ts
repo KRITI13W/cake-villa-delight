@@ -56,7 +56,7 @@ export const products: Product[] = [
     reviews: 89,
     tags: ["bestseller"],
     deliveryInfo: "Same-day delivery available",
-  },
+    occasions: ["Birthday", "Wedding", "Anniversary"],
   {
     id: "3",
     name: "Fresh Strawberry Shortcake",
