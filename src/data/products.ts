@@ -116,7 +116,7 @@ export const products: Product[] = [
     reviews: 78,
     tags: [],
     deliveryInfo: "30-min delivery",
-  },
+    occasions: ["Everyday"],
   {
     id: "8",
     name: "Paneer Tikka Wrap",
