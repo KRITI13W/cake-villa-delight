@@ -68,7 +68,7 @@ export const products: Product[] = [
     reviews: 67,
     tags: ["seasonal"],
     deliveryInfo: "Order before 2pm for same-day",
-  },
+    occasions: ["Birthday", "Party"],
   {
     id: "4",
     name: "Butter Croissant",
