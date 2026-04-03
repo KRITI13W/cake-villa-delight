@@ -92,7 +92,7 @@ export const products: Product[] = [
     reviews: 91,
     tags: [],
     deliveryInfo: "Best enjoyed fresh",
-  },
+    occasions: ["Everyday", "Party"],
   {
     id: "6",
     name: "Classic Smash Burger",
