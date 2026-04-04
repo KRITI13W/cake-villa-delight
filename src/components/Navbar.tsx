@@ -6,7 +6,7 @@ import SearchBar from "./SearchBar";
 const navLinks = [
   { label: "Menu", path: "/menu" },
   { label: "About", path: "/about" },
-  { label: "Custom Cake", path: "/custom-cake" },
+  { label: "Custom Cake & Hampers", path: "/custom-cake" },
   { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" },
 ];

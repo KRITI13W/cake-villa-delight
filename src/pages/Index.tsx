@@ -79,11 +79,11 @@ const Index = () => {
       {/* Value Strip */}
       <section className="border-y border-border bg-popover">
         <div className="container py-6 sm:py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {[
               { icon: Sparkles, label: "Made Fresh Daily" },
               { icon: Palette, label: "Custom Designs" },
-              { icon: Truck, label: "Doorstep Delivery" },
+             
               { icon: ShieldCheck, label: "100% Hygienic" },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex flex-col items-center gap-2 text-center">

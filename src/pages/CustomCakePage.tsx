@@ -105,8 +105,8 @@ const CustomCakePage = () => {
                 <li>✨ Custom designs for any occasion</li>
                 <li>🎨 Themed cakes, photo cakes & fondant art</li>
                 <li>🍰 1 to 4+ tier wedding & celebration cakes</li>
-                <li>🥛 Eggless & vegan options available</li>
-                <li>🚚 Doorstep delivery across Mumbai</li>
+                <li>🥛 Eggless </li>
+                
               </ul>
             </div>
           </div>

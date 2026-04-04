@@ -19,7 +19,7 @@ const GalleryPage = () => {
           <p className="text-sm sm:text-base text-muted-foreground">A glimpse into our sweet creations</p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-6 sm:mb-8">
+        {/* <div className="flex flex-wrap justify-center gap-2 mb-6 sm:mb-8">
           {galleryCategories.map((cat) => (
             <button
               key={cat}
@@ -31,7 +31,7 @@ const GalleryPage = () => {
               {cat}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className="columns-2 sm:columns-2 lg:columns-3 gap-3 sm:gap-4 space-y-3 sm:space-y-4">
           {filtered.map((img) => (

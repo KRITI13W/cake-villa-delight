@@ -30,7 +30,8 @@ const Footer = () => {
             <ul className="space-y-2 text-xs sm:text-sm opacity-80">
               <li><Link to="/" className="hover:opacity-100 transition-opacity">Home</Link></li>
               <li><Link to="/menu" className="hover:opacity-100 transition-opacity">Menu</Link></li>
-              <li><Link to="/custom-cake" className="hover:opacity-100 transition-opacity">Custom Cake</Link></li>
+              <li><Link to="/about" className="hover:opacity-100 transition-opacity">About</Link></li>
+              <li><Link to="/custom-cake" className="hover:opacity-100 transition-opacity">Custom Cakes & Hampers</Link></li>
               <li><Link to="/gallery" className="hover:opacity-100 transition-opacity">Gallery</Link></li>
               <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
             </ul>
